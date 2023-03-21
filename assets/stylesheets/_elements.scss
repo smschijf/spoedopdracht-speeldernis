@@ -361,7 +361,8 @@ h6 {
   letter-spacing: 0.72px;
   text-decoration: none;
   line-height: 1.15;
-  display: inline-block;
+  display: block;
+  max-width: fit-content;
   padding:1rem;
   border-radius: 8px;
   font-size: 1rem;
