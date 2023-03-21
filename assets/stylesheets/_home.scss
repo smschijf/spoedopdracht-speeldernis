@@ -13,7 +13,7 @@
 		}
 		@media only screen and (min-width: $md-min) {
 			flex-direction:row;
-			height: 540px;
+			height: 600px;
 		}	
 	}
 
@@ -73,8 +73,8 @@
 
 		}
 		@media only screen and (min-width: $md-min) {
-			min-width: 480px;
-			max-width: 480px;
+			min-width: 432px;
+			max-width: 432px;
 			flex-basis:480px;
 		}
 	}

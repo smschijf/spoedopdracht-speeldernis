@@ -1110,7 +1110,7 @@ form p {
 @media only screen and (min-width: 992px) {
   .home header {
     flex-direction: row;
-    height: 540px;
+    height: 600px;
   }
 }
 .home .header-image {
@@ -1165,8 +1165,8 @@ form p {
 }
 @media only screen and (min-width: 992px) {
   .home .header-vriendenvan {
-    min-width: 480px;
-    max-width: 480px;
+    min-width: 432px;
+    max-width: 432px;
     flex-basis: 480px;
   }
 }
@@ -1525,7 +1525,7 @@ form p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #53642d;
+  background-color: #00b8ad;
   position: relative;
 }
 .header-vriendenvan:before {
