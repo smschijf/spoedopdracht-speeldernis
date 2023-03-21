@@ -1,0 +1,22 @@
+@import url("https://use.typekit.net/knn3mih.css");
+@font-face {
+  font-family: "Ryker Light";
+  src: url("../fonts/Ryker-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ryker Bold";
+  src: url("../fonts/Ryker-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ryker Oblique";
+  src: url("/fonts/Ryker-BoldOblique.otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=variables.css.map */

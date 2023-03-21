@@ -1,0 +1,171 @@
+.cta-bar {
+	text-align: left !important;
+	
+	@media only screen and (max-width: $xs-max) {
+		padding:3rem 0;
+	}
+	@media only screen and (min-width: $sm-min) {
+		padding:5rem 0;
+	}
+}
+
+footer {
+	background-color: $color-4;
+	.footer-top {
+
+		.container {
+			display: flex;
+		}
+
+		.column {
+			p {
+				color: #fff;
+			}
+		}
+	}
+	.footer-bottom {
+		background-color: $color-12;
+		height: 3.5rem;
+		display: flex;
+		align-items:center;
+		justify-content:center;
+		text-align: center;
+	}
+	.menu-title {
+		color: #fff;
+	}
+	.copy {
+		color: #fff;
+	}
+
+	@media only screen and (max-width: $xs-max) {
+		.footer-top {
+			padding:3rem 0rem;
+
+			.container {
+				flex-direction:column;
+			}
+
+			.column {
+				p {
+					font-size: 0.875rem;
+				}
+				&+ .column {
+					margin-top: 3rem;
+				}
+				&:last-child {
+					order:-1;
+					margin:0 0 3rem 0;
+				}
+			}
+		}
+		.copy {
+			font-size: 12px;
+		}	
+	}
+	@media only screen and (min-width: $sm-min) {
+		.footer-top {
+			padding: 4rem 0;
+
+			.container {
+				flex-wrap:wrap;
+			}
+			
+			.column {
+				p {
+					font-size: 1rem;
+				}
+				flex-basis:auto;
+				flex-grow: 0;
+				flex-shrink:0;
+				&+ .column {
+					padding-left: 3rem;
+				}
+				&:last-child {
+					max-width: 352px;
+					margin-left: auto;
+				}
+			}
+		}
+		.copy {
+			font-size: 12px;
+		}	
+	}
+}
+
+.list-footer {
+	li {
+		&+ li {
+			margin-top: 0.25rem;
+		}
+	}
+	a {
+		color: #fff;
+	}
+	@media only screen and (max-width: $xs-max) {
+		a {
+			font-size: 0.875rem;
+		}
+	}
+	@media only screen and (min-width: $sm-min) {
+		a {
+			font-size: 1rem;
+		}
+	}
+}
+
+footer .footer-top .mc4wp-form {
+  width: 100%;
+  box-sizing:border-box;
+  margin: 1rem auto 0;
+
+  .mc4wp-response {
+    margin-top: 1rem;
+    p {
+      font-size: 0.875rem;
+      font-family: schoolbook,serif;
+    }
+  }
+
+  .mc4wp-form-fields {
+    display: flex;
+  }
+
+  input[type="email"] {
+    font-size: 1rem;
+    height: 3rem;
+    flex-grow:1;
+    border:0;
+    width: 100%;
+    font-family: schoolbook,serif;
+    font-weight: 400;
+    outline: none;
+    padding:0 1rem;
+    -webkit-appearance: none;
+    line-height: 1;
+    color: $color-text-primary;
+    background-color: #fff;
+  }
+  input[type="submit"] {
+    font-size: 1rem;
+    height: 3rem;
+    flex-grow:0;
+    font-family: schoolbook,serif;
+    outline: none;
+    border:0;
+    font-weight: 700;
+    padding:0;
+    letter-spacing: 0.8px;
+    padding:0 0.75rem;
+    line-height: 1;
+    -webkit-appearance: none;
+
+    background-color: $color-4;
+    border:2px solid #fff;
+    color: #fff;
+    transition:0.24s ease-out;
+    &:hover {
+      background-color: $color-12;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.single-post header .container {
+  max-width: 980px;
+}
+.single-post main .container {
+  max-width: 980px;
+}
+.single-post .sidebar {
+  display: none;
+}/*# sourceMappingURL=blog.css.map */

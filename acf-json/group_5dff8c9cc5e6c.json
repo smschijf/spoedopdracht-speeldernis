@@ -1,0 +1,140 @@
+{
+    "key": "group_5dff8c9cc5e6c",
+    "title": "Content",
+    "fields": [
+        {
+            "key": "field_5dff8c9cc8d5a",
+            "label": "Content builder",
+            "name": "content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5df23e0f62aeb": {
+                    "key": "5df23e0f62aeb",
+                    "name": "news",
+                    "label": "Nieuws",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5dff8c9cca2a3",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5dff6bf9722a6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5dff8cffe3835": {
+                    "key": "layout_5dff8cffe3835",
+                    "name": "usps",
+                    "label": "Usp's",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5dff8d0ae3836",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5dff8cb6bbc18"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5eebcf4056a01": {
+                    "key": "layout_5eebcf4056a01",
+                    "name": "text",
+                    "label": "Tekst",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5eebcf4456a02",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5df23ea044bf9"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add content",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-vriendenvan.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "Vriendenvan",
+    "modified": 1592512541
+}

@@ -1,0 +1,54 @@
+@import url("https://use.typekit.net/knn3mih.css");
+
+@font-face {
+  font-family: "Ryker Light";
+  src: url("../fonts/Ryker-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ryker Bold";
+  src: url("../fonts/Ryker-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ryker Oblique";
+  src: url("/fonts/Ryker-BoldOblique.otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+$xs-max: 767px;
+$sm-min: 768px;
+$sm-max: 991px;
+$md-min: 992px;
+$md-max: 1279px;
+$lg-min: 1280px;
+$xl-min: 1600px;
+
+$color-1: #ad8b58;
+$color-2: #878278;
+$color-3: #c6beac;
+$color-4: #00b8ad;
+$color-5: #53642d;
+$color-6: #608da8;
+$color-7: #ffae1c;
+$color-8: #fd7f45;
+$color-9: #2b2b29;
+
+$color-10: #aea288;
+$color-11: #45433f1a;
+$color-12: #f597a8;
+$color-13: #929f77;
+$color-14: #444440;
+$color-15: #84765a;
+$color-16: #a79b7f;
+
+$color-text-primary: $color-9;
+$color-text-secondary: $color-14;

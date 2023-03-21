@@ -1,0 +1,46 @@
+{
+    "key": "group_5dff50f664668",
+    "title": "Blog",
+    "fields": [
+        {
+            "key": "field_5dff510570e4f",
+            "label": "Intro",
+            "name": "intro",
+            "type": "textarea",
+            "instructions": "Een korte introductie van het artikel. Ongeveer 3 regels lang. Deze tekst wordt getoond op de nieuws overzichtspagina.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1582297493
+}

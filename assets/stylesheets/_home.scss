@@ -1,0 +1,123 @@
+.home {
+	header {
+		display: flex;
+
+		@media only screen and (max-width: $xs-max) {
+
+		}
+		@media only screen and (min-width: $sm-min) {
+
+		}	
+		@media only screen and (max-width: $sm-max) {
+			flex-direction:column;
+		}
+		@media only screen and (min-width: $md-min) {
+			flex-direction:row;
+			height: 540px;
+		}	
+	}
+
+	.header-image {
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		flex-grow:1;
+		margin:0;
+		display: flex;
+		align-items:center;
+		
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			left:0;
+			right:0;
+			bottom: 0;
+			top:0;
+			background-color: rgba(0,0,0,0.2);
+		}
+
+		@media only screen and (max-width: $xs-max) {
+			padding:3rem;
+			justify-content:center;
+		}
+		@media only screen and (min-width: $sm-min) {
+			padding:6rem;
+			justify-content:center;
+		}
+		@media only screen and (min-width: $md-min) {
+			justify-content:flex-start;
+		}
+	}
+
+	.header-content {
+		position: relative;
+		flex-basis:320px;
+		margin:0;
+		text-align: center;
+		> * {
+			color: #fff;
+			text-align: center;
+		}
+	}
+
+	.header-vriendenvan {
+		height: 100%;
+
+		@media only screen and (max-width: $xs-max) {
+
+
+		}
+		@media only screen and (min-width: $sm-min) {
+
+		}
+		@media only screen and (min-width: $md-min) {
+			min-width: 480px;
+			max-width: 480px;
+			flex-basis:480px;
+		}
+	}
+}
+
+.home header, .header-vriendenvan {
+	.header-vriendenvan-subtitle, .header-subtitle {
+		font-family: trade-gothic-next, sans-serif;
+		font-weight: 700;
+		display: block;
+		letter-spacing: 0;
+
+		@media only screen and (max-width: $xs-max) {
+			font-size: 1rem;
+			margin-bottom: 1rem;
+		}
+		@media only screen and (min-width: $sm-min) {
+			font-size: 20px;
+			margin-bottom: 1.5rem;
+		}
+	}
+	.header-vriendenvan-title, .header-title {
+		text-transform: uppercase;
+
+		@media only screen and (max-width: $xs-max) {
+			font-size: 30px;
+			margin-bottom: 2rem;
+		}
+		@media only screen and (min-width: $sm-min) {
+			font-size: 40px;
+			margin-bottom: 2.5rem;
+		}
+	}
+	.header-title {
+		text-transform: uppercase;
+
+		@media only screen and (max-width: $xs-max) {
+			font-size: 40px;
+			margin-bottom: 2rem;
+		}
+		@media only screen and (min-width: $sm-min) {
+			font-size: 50px;
+			margin-bottom: 2.5rem;
+		}
+	}
+}

@@ -1,0 +1,92 @@
+main {
+	@media only screen and (max-width: $xs-max) {
+		margin-top: 1.5rem;
+	}
+	@media only screen and (min-width: $sm-min) {
+		margin-top: 3rem;
+	}
+}
+
+.content-holder {
+	display: flex;
+
+	@media only screen and (max-width: $xs-max) {
+		flex-direction:column;
+		justify-content:flex-start;
+	}
+	@media only screen and (min-width: $sm-min) {
+
+	}
+}
+
+.content {
+
+	p {
+		&+ p {
+			margin-top: 1rem;
+		}
+	}
+
+	@media only screen and (max-width: $xs-max) {
+
+	}
+
+	@media only screen and (min-width: $sm-min) {
+		flex-basis:auto;
+		flex-grow:1;
+
+		.content-inner {
+			max-width: 560px;
+		}
+
+		.page-template-page-full & {
+			max-width: 100%;
+		}
+	}
+}
+
+.content-inner.intro {
+	margin-bottom: 1.5rem;
+}
+
+.sidebar {
+	
+	@media only screen and (max-width: $xs-max) {
+		order:-1;
+		border-top: 4px solid $color-11;
+		border-bottom: 4px solid $color-11;
+		padding: 1.5rem 0;
+		margin-bottom: 1.5rem;
+	}
+
+	@media only screen and (min-width: $sm-min) {
+		display: none;
+		border-left: 4px solid transparent;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		flex-grow:0;
+		flex-basis:auto;
+		min-width: 300px;
+		order:-1;
+		&.active {
+			display: block;
+			border-left: 4px solid $color-11;
+		}
+	}
+	@media only screen and (min-width: $md-min) {
+		display: block;
+	}
+}
+
+.section-text {
+	.content-inner {
+		margin:0 auto;
+	}
+	@media only screen and (max-width: $xs-max) {
+		padding-top: 1.5rem;
+	}
+
+	@media only screen and (min-width: $sm-min) {
+		padding-top: 4.5rem;
+	}
+}

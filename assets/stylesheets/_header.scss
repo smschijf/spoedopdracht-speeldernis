@@ -1,0 +1,164 @@
+header {
+	@media only screen and (max-width: $xs-max) {
+		.container {
+			padding:0;
+		}
+	}
+	@media only screen and (min-width: $sm-min) {
+
+	}
+}
+.header-content {
+	@media only screen and (max-width: $xs-max) {
+		padding:0 1.5rem;
+		margin-top: 1.5rem;
+	}
+	@media only screen and (min-width: $sm-min) {
+		margin-top: 5rem;
+		max-width: 560px;
+	}
+	@media only screen and (min-width: $md-min) {
+		.page & {
+			padding-left: 300px;
+			box-sizing:content-box;
+		}
+	}
+}
+
+.header-image-holder {
+	position: relative;
+	height: 50vh;
+	max-height: 540px;
+	@media only screen and (max-width: $xs-max) {
+		margin-bottom: 1.5rem;
+	}
+	@media only screen and (min-width: $sm-min) {
+
+	}
+}
+
+.header-image {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.header-subtitle {
+	font-family: tgn-soft-round, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	display: block;
+
+	@media only screen and (max-width: $xs-max) {
+		font-size: 10px;
+		letter-spacing: 0.5px;
+		margin:0 0 0.5rem;
+		color: $color-10;
+	}
+	@media only screen and (min-width: $sm-min) {
+		font-size: 1rem;
+		letter-spacing: 0.8px;
+		margin:0 0 1.5rem;
+		color: $color-4;
+	}
+}
+
+.header-title {
+	margin:0;
+	display: block;
+}
+
+.header-date {
+	display: block;
+
+	@media only screen and (max-width: $xs-max) {
+		font-size: 13px;
+		margin:1rem 0 0 0;
+		letter-spacing: 0.64px;
+		color:$color-3;
+	}
+	@media only screen and (min-width: $sm-min) {
+		font-size: 14px;
+		text-transform: uppercase;
+		margin:1.5rem 0 0 0;
+		letter-spacing: 0.8px;
+		color: $color-text-primary;
+	}
+}
+
+.header-vriendenvan {
+	text-align: center;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	background-color: $color-5;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom: 0;
+		background-image: url('assets/images/bg-flower.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.1;
+	}
+
+	.btn-holder {
+		text-align: center;
+	}
+
+	.btn {
+		background-color: #fff;
+		color: $color-4;
+		text-transform: none;
+		font-family: trade-gothic-next, sans-serif;
+		margin:0.5rem;
+		border-color: #fff;
+		border:0;
+		box-shadow: 1px 3px 3px rgba(0,0,0,0);
+		transition:0.24s ease-out color, 0.24s ease-out box-shadow;
+	}
+
+	@media only screen and (max-width: $xs-max) {
+		padding:2rem;
+
+		.btn-holder {
+			margin-top: 1rem;
+		}
+
+	}
+	@media only screen and (min-width: $sm-min) {
+		padding:3.75rem;
+
+		.btn-holder {
+			margin-top: 2rem;
+		}
+
+		.btn:hover {
+			color: darken($color-4, 15%);
+			background-color: #fbfbfb;
+			box-shadow: 1px 3px 3px rgba(0,0,0,0.3);
+			border:0;
+		}
+	}
+}
+
+.header-vriendenvan-content {
+	position: relative;
+	margin:0 auto;
+	max-width: 790px;
+	> * {
+		color: #fff;
+	}
+}
