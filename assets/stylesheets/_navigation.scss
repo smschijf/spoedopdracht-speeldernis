@@ -104,8 +104,10 @@
     }
 
     .column-menu {
+      display: flex;
+      flex-direction: row;
       flex-basis: 100%;
-      max-width: 1160px;
+      max-width: 100%;
       padding-bottom: 1.5rem;
       .list-menu {
         display: flex;
@@ -199,10 +201,6 @@
       }
     }
   }
-  @media only screen and (min-width: $md-min) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
 }
 
 .logo-speeldernis {
@@ -239,7 +237,6 @@
     font-family: Ryker Bold, sans-serif;
     font-weight: 700;
     font-style: normal;
-    text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.4px;
     color: $color-15;
@@ -363,7 +360,6 @@
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
   font-family: Ryker Bold, sans-serif;
   font-weight: 700;
   font-style: normal;

@@ -586,8 +586,10 @@ form p {
     background-color: #fff;
   }
   #navigation .column-menu {
+    display: flex;
+    flex-direction: row;
     flex-basis: 100%;
-    max-width: 1160px;
+    max-width: 100%;
     padding-bottom: 1.5rem;
   }
   #navigation .column-menu .list-menu {
@@ -674,12 +676,6 @@ form p {
     background-color: #aea288;
   }
 }
-@media only screen and (min-width: 992px) {
-  #navigation {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
 
 .logo-speeldernis {
   display: block;
@@ -718,7 +714,6 @@ form p {
   font-family: Ryker Bold, sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.4px;
   color: #84765a;
@@ -842,7 +837,6 @@ form p {
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
   font-family: Ryker Bold, sans-serif;
   font-weight: 700;
   font-style: normal;
