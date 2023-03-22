@@ -25,9 +25,9 @@
 				Sample text Sample text Sample text Sample text 
 			</p>
 
-			<button class="header-button">
+			<a class="header-button btn" href="#">
 				Boek je feestje!
-			</button>
+			</a>
 			<!-- TYGO'S WERK -->
 			<?php if( $headerLink != '' ): 
 	            $link_url = $headerLink['url'];
