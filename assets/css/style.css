@@ -1444,8 +1444,8 @@ form p {
     padding: 60px 100px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 25rem;
-    min-width: 45rem;
+    height: 32rem;
+    min-width: 55.5rem;
   }
   .header-content .header-button {
     background-color: #f597a8;
@@ -1809,7 +1809,6 @@ footer .footer-top .mc4wp-form input[type=email] {
   font-weight: 400;
   outline: none;
   padding: 0 1rem;
-  appearance: none;
   -webkit-appearance: none;
   line-height: 1;
   color: #2b2b29;
@@ -1829,7 +1828,6 @@ footer .footer-top .mc4wp-form input[type=submit] {
   letter-spacing: 0.8px;
   padding: 0 0.75rem;
   line-height: 1;
-  appearance: none;
   -webkit-appearance: none;
   background-color: #f597a8;
   border-radius: 10px;
