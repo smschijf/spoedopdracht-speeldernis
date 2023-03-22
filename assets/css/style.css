@@ -898,7 +898,6 @@ form p {
   color: #2b2b29;
   display: block;
   margin: 0 0 1rem 0;
-  text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) {
   .menu-title {
@@ -1689,6 +1688,7 @@ footer .footer-top .container {
 }
 footer .footer-top .column p {
   color: #fff;
+  font-family: Ryker Light, sans-serif;
 }
 footer .footer-bottom {
   background-color: #f597a8;
@@ -1700,6 +1700,7 @@ footer .footer-bottom {
 }
 footer .menu-title {
   color: #fff;
+  font-family: Ryker Bold, sans-serif;
 }
 footer .copy {
   color: #fff;
@@ -1736,6 +1737,7 @@ footer .copy {
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
+    width: 25%;
   }
   footer .footer-top .column p {
     font-size: 1rem;
@@ -1757,6 +1759,7 @@ footer .copy {
 }
 .list-footer a {
   color: #fff;
+  font-family: Ryker Light, sans-serif;
 }
 @media only screen and (max-width: 767px) {
   .list-footer a {
