@@ -386,7 +386,7 @@ h6 {
 }
 
 .btn, .content-inner input[type=submit] {
-  background-color: #00b8ad;
+  background-color: #f597a8;
   border: 0;
   text-transform: uppercase;
   font-family: trade-gothic-next, sans-serif;
@@ -1804,7 +1804,7 @@ footer .footer-top .mc4wp-form input[type=email] {
   height: 3rem;
   flex-grow: 1;
   border: 0;
-  width: 290px;
+  width: 100%;
   font-family: schoolbook, serif;
   font-weight: 400;
   outline: none;
@@ -1813,12 +1813,10 @@ footer .footer-top .mc4wp-form input[type=email] {
   line-height: 1;
   color: #2b2b29;
   background-color: #fff;
-  border-radius: 10px;
-  padding-right: 120px;
 }
 footer .footer-top .mc4wp-form input[type=submit] {
   font-size: 1rem;
-  height: 30px;
+  height: 3rem;
   flex-grow: 0;
   font-family: schoolbook, serif;
   outline: none;
@@ -1829,12 +1827,10 @@ footer .footer-top .mc4wp-form input[type=submit] {
   padding: 0 0.75rem;
   line-height: 1;
   -webkit-appearance: none;
-  background-color: #f597a8;
-  border-radius: 10px;
+  background-color: #00b8ad;
+  border: 2px solid #fff;
   color: #fff;
   transition: 0.24s ease-out;
-  margin-left: -120px;
-  margin-top: 9px;
 }
 footer .footer-top .mc4wp-form input[type=submit]:hover {
   background-color: #f597a8;
