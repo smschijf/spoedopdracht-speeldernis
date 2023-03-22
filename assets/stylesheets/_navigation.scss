@@ -106,9 +106,16 @@
     .column-menu {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      column-gap: 1.5rem;
       flex-basis: 100%;
       max-width: 100%;
-      padding-bottom: 1.5rem;
+      height: 90px;
+      box-shadow: 0 3px 6px rgb(0, 0, 0, 0.3);
+      .menu-main-container {
+        display: flex;
+        align-items: center;
+      }
       .list-menu {
         display: flex;
         align-items: center;
@@ -119,18 +126,18 @@
           position: relative;
           margin: 0;
           &.seperator {
-            padding-left: 2rem;
-            &:before {
-              content: "";
-              width: 4px;
-              height: 100%;
-              display: block;
-              position: absolute;
-              top: 0;
-              left: 0;
-              bottom: 0;
-              background-color: $color-11;
-            }
+            // padding-left: 2rem;
+            // &:before {
+            //   content: "";
+            //   width: 4px;
+            //   height: 100%;
+            //   display: block;
+            //   position: absolute;
+            //   top: 0;
+            //   left: 0;
+            //   bottom: 0;
+            //   background-color: $color-11;
+            // }
 
             a {
               position: relative;
@@ -241,7 +248,7 @@
     letter-spacing: 0.4px;
     color: $color-15;
     line-height: 2;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border: 0;
     transition: 0.24s ease-out color;
     &:hover {
@@ -314,18 +321,19 @@
   position: relative;
   background-color: $color-12;
   display: block;
-  padding-left: 34px;
+  padding-left: 1rem;
   border: 0;
+  border-radius: 0 5px 5px 0;
   color: #fff;
 
   &:hover {
     border: 0;
     color: #fff;
-    background-color: darken($color-5, 5%);
+    background-color: darken($color-12, 10%);
   }
 
   @media only screen and (min-width: $sm-min) {
-    width: 215px;
+    width: 195px;
     transition: 0.24s ease-out background-color;
   }
 }
@@ -354,17 +362,17 @@
 .btn-vriendenvan,
 .btn-contact {
   position: relative;
-  height: 5rem;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  font-family: Ryker Bold, sans-serif;
+  font-family: "Ryker Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 1.375;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: 0.48px;
   border: 0;
   &:hover {

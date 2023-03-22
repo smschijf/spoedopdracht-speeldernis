@@ -588,9 +588,17 @@ form p {
   #navigation .column-menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     flex-basis: 100%;
     max-width: 100%;
-    padding-bottom: 1.5rem;
+    height: 90px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  #navigation .column-menu .menu-main-container {
+    display: flex;
+    align-items: center;
   }
   #navigation .column-menu .list-menu {
     display: flex;
@@ -601,20 +609,6 @@ form p {
   #navigation .column-menu .list-menu li {
     position: relative;
     margin: 0;
-  }
-  #navigation .column-menu .list-menu li.seperator {
-    padding-left: 2rem;
-  }
-  #navigation .column-menu .list-menu li.seperator:before {
-    content: "";
-    width: 4px;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(69, 67, 63, 0.1019607843);
   }
   #navigation .column-menu .list-menu li.seperator a {
     position: relative;
@@ -718,7 +712,7 @@ form p {
   letter-spacing: 0.4px;
   color: #84765a;
   line-height: 2;
-  font-size: 1.4rem;
+  font-size: 1rem;
   border: 0;
   transition: 0.24s ease-out color;
 }
@@ -788,18 +782,19 @@ form p {
   position: relative;
   background-color: #f597a8;
   display: block;
-  padding-left: 34px;
+  padding-left: 1rem;
   border: 0;
+  border-radius: 0 5px 5px 0;
   color: #fff;
 }
 .btn-vriendenvan:hover {
   border: 0;
   color: #fff;
-  background-color: #445225;
+  background-color: #f16881;
 }
 @media only screen and (min-width: 768px) {
   .btn-vriendenvan {
-    width: 215px;
+    width: 195px;
     transition: 0.24s ease-out background-color;
   }
 }
@@ -831,17 +826,17 @@ form p {
 .btn-vriendenvan,
 .btn-contact {
   position: relative;
-  height: 5rem;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  font-family: Ryker Bold, sans-serif;
+  font-family: "Ryker Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 1.375;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: 0.48px;
   border: 0;
 }

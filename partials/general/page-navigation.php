@@ -1,118 +1,118 @@
 <?php
-	$pageVriendenvan = get_field('navigation-vriendenvan', 'nl');
-	$pageBoeknu 	 = get_field('navigation-book', 'nl');
-	$pageTimes 		 = get_field('navigation-times', 'nl');
+$pageVriendenvan = get_field('navigation-vriendenvan', 'nl');
+$pageBoeknu    = get_field('navigation-book', 'nl');
+$pageTimes      = get_field('navigation-times', 'nl');
 ?>
 <nav id="navigation">
-	<!-- <div class="column column-vriend">
-		<?php if($pageVriendenvan != ''):
-			$link_url = $pageVriendenvan['url'];
-            $link_title = $pageVriendenvan['title'];
-            $link_target = $pageVriendenvan['target'] ? $pageVriendenvan['target'] : '_self';
-		?>
-			<a class="btn-vriendenvan" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-				<span class="readmore"><?php echo esc_html( $link_title ); ?></span>
-			</a>
-		<?php endif; ?>
-	</div> -->
-	
-	<div class="column column-menu">
-  <?php if($pageVriendenvan != ''):
-			$link_url = $pageVriendenvan['url'];
-            $link_title = $pageVriendenvan['title'];
-            $link_target = $pageVriendenvan['target'] ? $pageVriendenvan['target'] : '_self';
-		?>
-			<a class="btn-vriendenvan" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-				<span class="readmore"><?php echo esc_html( $link_title ); ?></span>
-			</a>
-		<?php endif; ?>
-		<?php
-			if(has_nav_menu('header_02')):
-	          wp_nav_menu( array(
-	              'theme_location' => 'header_02',
-	              'menu_class' => 'list-menu'
-	          ) );
-	        endif;
-    	?>
+
+  <div class="column column-menu">
+    <?php if ($pageVriendenvan != '') :
+      $link_url = $pageVriendenvan['url'];
+      $link_title = $pageVriendenvan['title'];
+      $link_target = $pageVriendenvan['target'] ? $pageVriendenvan['target'] : '_self';
+    ?>
+      <a class="btn-vriendenvan" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+        <span class="readmore"><?php echo esc_html($link_title); ?></span>
+      </a>
+    <?php endif; ?>
+    <?php
+    if (has_nav_menu('header_02')) :
+      wp_nav_menu(array(
+        'theme_location' => 'header_02',
+        'menu_class' => 'list-menu'
+      ));
+    endif;
+    ?>
+    <a class="btn-logo" href="/" target="<?php echo esc_attr($link_target); ?>">
+      <svg xmlns="http://www.w3.org/2000/svg" width="195" height="125" viewBox="0 0 212.914 137.275">
+        <path id="Path_13" data-name="Path 13" d="M212.88,35.527s0-10.1-10.1-10.1H0V68.715H168.99V162.68h43.924l-.034-93.966Z" transform="translate(0 -25.405)" fill="#00b8ad" />
+        <path id="Path_14" data-name="Path 14" d="M216.474,144.758a14.276,14.276,0,0,0-4.224,10.123c0,5.469,2.886,9.264,7.363,9.264s6.5-3.921,7.969-8.743c.429-1.38,1.119-4.224,2.583-4.224.909,0,1.935.732,1.935,3.1a7.583,7.583,0,0,1-2.541,5.3l3.879,3.744a12.187,12.187,0,0,0,3.744-8.827c0-4.653-2.365-9.088-7.152-9.088s-6.547,4.047-7.842,8.532c-.858,2.886-1.59,4.527-2.8,4.527-.858,0-2.154-.858-2.154-3.618a8.753,8.753,0,0,1,3.189-6.462l-3.963-3.618Zm19.64-9.862H213.369v5.814h22.745Zm10.3,2.886a3.5,3.5,0,1,0-3.492,3.7,3.364,3.364,0,0,0,3.492-3.7m-33.036-30.924v5.554h3.963c11.713,0,14.044,3.921,14.044,7.068,0,2.928-2.112,4.653-4.956,4.653H213.378V129.6h13.741c5.857,0,9.736-3.963,9.736-8.919a8.934,8.934,0,0,0-5.209-8.229h4.569v-5.6H213.386Zm0-17.351v5.554h4.089c11.713,0,12.841,5.512,12.841,8.659h6.328c0-3.618-1.851-7.237-5-8.617h4.569v-5.6H213.378Zm7.321-8.835a6.571,6.571,0,0,1-2.5-5.259,5.6,5.6,0,0,1,4.569-5.6V86.092h2.2c5.857,0,11.806-4.047,11.806-10.855,0-7.194-5.343-11.368-11.806-11.368-6.849,0-12.016,4.477-12.016,11.5a12.241,12.241,0,0,0,4.392,9.694l3.357-4.392ZM227.329,69.9a4.971,4.971,0,0,1,4.182,5.167,5.152,5.152,0,0,1-4.182,4.956Zm-14-9.391a44.73,44.73,0,0,0,11.461-1.464,41.122,41.122,0,0,0,11.074,1.422h10.7v-5.6H232.546a9.846,9.846,0,0,0,4.392-8.137c0-7.842-6.244-11.587-12.319-11.587-6.5,0-11.932,4.779-11.932,11.368a10.193,10.193,0,0,0,4.266,8.356c-.993.042-2.5.042-3.618.042v5.6Zm11.419-6.462c-4.519-1.422-6.547-4.392-6.547-7.279,0-3.357,2.76-5.941,6.42-5.941s6.849,2.583,6.849,6.159c0,3.054-2.5,5.554-6.723,7.06" transform="translate(-33.651 -26.946)" fill="#f597a8" />
+        <path id="Path_15" data-name="Path 15" d="M167.172,58.57h5.6V25.4h-5.6ZM157.95,51.25a6.571,6.571,0,0,1-5.259,2.5,5.58,5.58,0,0,1-5.6-4.569h16.282v-2.2c0-5.857-4.047-11.806-10.855-11.806-7.194,0-11.368,5.343-11.368,11.806,0,6.849,4.477,12.016,11.5,12.016a12.229,12.229,0,0,0,9.694-4.392l-4.392-3.357Zm-10.771-6.631a4.971,4.971,0,0,1,5.167-4.182,5.152,5.152,0,0,1,4.956,4.182ZM133.093,51.25a6.567,6.567,0,0,1-5.251,2.5,5.6,5.6,0,0,1-5.6-4.569H138.52v-2.2c0-5.857-4.047-11.806-10.855-11.806-7.194,0-11.368,5.343-11.368,11.806C116.3,53.833,120.774,59,127.8,59a12.241,12.241,0,0,0,9.694-4.392L133.1,51.25Zm-10.771-6.631a4.971,4.971,0,0,1,5.167-4.182,5.152,5.152,0,0,1,4.956,4.182Zm-26.96,2.364c1.422-4.527,4.434-6.589,7.279-6.589,3.357,0,5.941,2.8,5.941,6.462s-2.583,6.849-6.159,6.849c-3.054,0-5.554-2.5-7.068-6.723M88.891,35.742A40.407,40.407,0,0,0,90.355,47.2,34.221,34.221,0,0,0,88.933,56.9v11.78h5.6V54.784a9.846,9.846,0,0,0,8.137,4.392c7.842,0,11.587-6.244,11.587-12.319,0-6.5-4.779-11.932-11.368-11.932a10.193,10.193,0,0,0-8.356,4.266c-.042-.993-.042-2.322-.042-3.45h-5.6ZM62.705,55.213a17.086,17.086,0,0,0,11.419,4.392c5.6,0,12.1-2.364,12.1-9.046,0-5.772-5-8.187-10.771-9.736-5.554-1.506-5.646-3.147-5.554-4.308.042-.513.816-2.667,4.872-2.667a7.329,7.329,0,0,1,6.033,2.76l4.35-4.224c-2.583-3.054-6.631-4.308-10.384-4.308-6.033,0-10.594,3.231-10.981,7.969-.429,5.73,3.795,8.869,10.081,10.594,6.075,1.641,6.244,3.012,6.244,3.921,0,1.2-1.077,3.273-5.991,3.273a11.365,11.365,0,0,1-7.5-3.189L62.7,55.213ZM45.733,51.25a6.571,6.571,0,0,1-5.259,2.5,5.58,5.58,0,0,1-5.6-4.569H51.16v-2.2c0-5.857-4.047-11.806-10.855-11.806-7.194,0-11.368,5.343-11.368,11.806C28.937,53.833,33.414,59,40.44,59a12.241,12.241,0,0,0,9.694-4.392L45.741,51.25ZM34.962,44.619a4.971,4.971,0,0,1,5.167-4.182,5.152,5.152,0,0,1,4.956,4.182Zm-9.391,14A44.73,44.73,0,0,0,24.107,47.16a41.122,41.122,0,0,0,1.422-11.074V25.45h-5.6V39.41A9.846,9.846,0,0,0,11.8,35.018C3.963,35.009.21,41.253.21,47.328c0,6.5,4.779,11.932,11.368,11.932a10.193,10.193,0,0,0,8.356-4.266c.042.993.042,2.5.042,3.618h5.6ZM19.109,47.2c-1.422,4.527-4.392,6.547-7.279,6.547-3.357,0-5.941-2.76-5.941-6.42s2.583-6.849,6.159-6.849c3.054,0,5.554,2.5,7.068,6.723" transform="translate(-0.033 -25.4)" fill="#f597a8" />
+        <path id="Path_16" data-name="Path 16" d="M160.76,99.831h.892V94.942a2.9,2.9,0,0,0-2.911-3.088c-1.422,0-2.7.833-3.526,2.743V92.073h-.9v7.758h.9v-1.2c0-4.418,2.028-5.873,3.408-5.873a2.063,2.063,0,0,1,2.129,2.188v4.889ZM146.144,92.7a2.8,2.8,0,0,1,2.743,2.819h-5.713a2.776,2.776,0,0,1,2.97-2.819m.059,7.3a4.189,4.189,0,0,0,3.366-1.515l-.69-.555a3.365,3.365,0,0,1-2.676,1.161,2.837,2.837,0,0,1-3.012-2.718l6.6-.017v-.513a3.769,3.769,0,0,0-3.66-4.039,3.721,3.721,0,0,0-3.862,4.039A3.832,3.832,0,0,0,146.2,100m-8.33-11.511h-.9V99.831h.9ZM128.835,92.7a2.8,2.8,0,0,1,2.743,2.819h-5.713a2.776,2.776,0,0,1,2.97-2.819m.059,7.3a4.189,4.189,0,0,0,3.366-1.515l-.69-.555a3.365,3.365,0,0,1-2.676,1.161,2.837,2.837,0,0,1-3.012-2.718l6.6-.017v-.513a3.769,3.769,0,0,0-3.66-4.039,3.721,3.721,0,0,0-3.862,4.039,3.832,3.832,0,0,0,3.938,4.157m-11.351-1c-1.481,0-2.558-1.144-3.155-3.13.648-2.146,1.834-3.113,3.189-3.113,1.54,0,2.642,1.3,2.642,3.088s-1.043,3.155-2.676,3.155m-3.492-4.7a15.265,15.265,0,0,1-.16-2.23h-.909a15.379,15.379,0,0,0,.5,3.8,15.507,15.507,0,0,0-.488,4.039v3.29h.909V99.873a18.774,18.774,0,0,1,.151-2.423,3.775,3.775,0,0,0,3.484,2.465c2.364,0,3.6-2.053,3.6-4.081a3.722,3.722,0,0,0-3.551-3.98,3.865,3.865,0,0,0-3.526,2.449m-8.473,4.965a4.088,4.088,0,0,1-3.13-1.043l-.606.673a5.041,5.041,0,0,0,3.778,1.22c1.818-.1,2.836-1.119,2.836-2.171,0-1.775-1.75-2.221-3.155-2.5-1.809-.353-2.247-.85-2.23-1.5.025-.589.513-1.262,1.868-1.338a3.591,3.591,0,0,1,2.625.867l.614-.648a4.529,4.529,0,0,0-3.307-1.085c-1.632.084-2.7.968-2.7,2.188,0,1.38,1.119,2.028,2.954,2.381,2.188.438,2.4.951,2.44,1.59.017.438-.438,1.279-1.986,1.363M87.167,96.2A3.709,3.709,0,0,1,91.13,99.84h.909a4.3,4.3,0,0,0-3.054-4.182c1.4-.724,2.7-2.087,2.7-3.6h-.892c0,1.59-2.247,3.248-3.8,3.248H85.946V89.675h-.892V99.84h.892V96.2h1.22Zm-7.009-4.157h-.85v8.372c0,.732-.337,1.128-1.06,1.128a2.423,2.423,0,0,1-.774-.143l-.261.808a3.62,3.62,0,0,0,1.027.177,1.77,1.77,0,0,0,1.91-1.969l.017-8.372Zm.236-1.75a.69.69,0,1,0-.69.69.693.693,0,0,0,.69-.69m-6.976,1.75h-.892v7.783h.892Zm.252-1.75a.69.69,0,1,0-.69.69.693.693,0,0,0,.69-.69M67.291,88.48H66.4V99.823h.892Zm-4.847,3.374a4.215,4.215,0,0,0-3.744,2.76V92.073h-.892v7.741H58.7v-1.3c0-4.527,2.322-5.7,3.744-5.7Zm-15.962.2H45.59v4.906a2.851,2.851,0,0,0,2.853,3.071c1.439,0,2.617-.841,3.433-2.743v2.524h.892V92.056h-.892v1.2c0,4.2-1.927,5.857-3.315,5.857a2,2,0,0,1-2.07-2.171V92.056Zm-12.092,0h-.9v4.906a2.851,2.851,0,0,0,2.853,3.071c1.439,0,2.617-.841,3.433-2.743v2.524h.9V92.056h-.9v1.2c0,4.2-1.927,5.857-3.315,5.857a2,2,0,0,1-2.07-2.171Zm-7.683-2.423h-.892v2.4H24.36v.833h1.456v4.981a1.97,1.97,0,0,0,2.053,2.087,5.135,5.135,0,0,0,1.691-.353l-.32-.833a3.989,3.989,0,0,1-1.38.294,1.073,1.073,0,0,1-1.144-1.186V92.872h2.6v-.833h-2.6v-2.4ZM15.718,92.721c1.439,0,2.44,1.22,3.029,3.248-.5,1.658-1.4,3.155-3.189,3.155a2.826,2.826,0,0,1-2.7-3.054,3.086,3.086,0,0,1,2.861-3.349m3.307,4.847a16.043,16.043,0,0,1,.16,2.247h.892a14.665,14.665,0,0,0-.488-3.837,14.775,14.775,0,0,0,.488-3.921h-.892a16.212,16.212,0,0,1-.143,2.306,3.653,3.653,0,0,0-3.332-2.524c-2.407,0-3.761,2.1-3.761,4.233a3.652,3.652,0,0,0,7.085,1.5M6.446,99.831h.892V94.942a2.9,2.9,0,0,0-2.911-3.088C3,91.854,1.725,92.687.9,94.6V92.073H0v7.758H.892v-1.2c0-4.418,2.028-5.873,3.408-5.873a2.063,2.063,0,0,1,2.129,2.188v4.889Z" transform="translate(0 -35.401)" fill="#f597a8" />
+        <rect id="Rectangle_36" data-name="Rectangle 36" width="212.914" height="137.275" fill="none" />
+      </svg>
+
+
+    </a>
+  </div>
+  <div class="nav-mobile">
+    <div>
+      <?php
+      if (has_nav_menu('header_03')) :
+        wp_nav_menu(array(
+          'theme_location' => 'header_03',
+          'menu_class' => 'list-menu',
+          'container' => false
+        ));
+      endif;
+      ?>
+      <?php
+      if (has_nav_menu('header_03')) :
+        wp_nav_menu(array(
+          'theme_location' => 'header_04',
+          'menu_class' => 'list-menu small',
+          'container' => false
+        ));
+      endif;
+      ?>
     </div>
-	<div class="nav-mobile">
-		<div>
-			<?php
-				if(has_nav_menu('header_03')):
-		          wp_nav_menu( array(
-		              'theme_location' => 'header_03',
-		              'menu_class' => 'list-menu',
-		              'container' => false
-		          ) );
-		        endif;
-	    	?>
-	    	<?php
-				if(has_nav_menu('header_03')):
-		          wp_nav_menu( array(
-		              'theme_location' => 'header_04',
-		              'menu_class' => 'list-menu small',
-		              'container' => false
-		          ) );
-		        endif;
-	    	?>
-	    </div>
-	</div>
-	<div class="menu-overlay">
-		<div class="column">
-			<?php
-				if(has_nav_menu('overlay_01')):
-					$menuName = get_term(get_nav_menu_locations()['overlay_01'], 'nav_menu')->name;
-					?>
-					<span class="menu-title"><?php echo $menuName; ?></span>
-					<?php
-					wp_nav_menu( array(
-					  'theme_location' => 'overlay_01',
-					  'menu_class' => 'list-menu-overlay'
-					));
-		        endif;
-        	?>
-		</div>
-		<div class="column">
-			<?php
-				if(has_nav_menu('overlay_02')):
-					$menuName = get_term(get_nav_menu_locations()['overlay_02'], 'nav_menu')->name;
-					?>
-					<span class="menu-title"><?php echo $menuName; ?></span>
-					<?php
-					wp_nav_menu( array(
-					  'theme_location' => 'overlay_02',
-					  'menu_class' => 'list-menu-overlay'
-					));
-		        endif;
-        	?>
-		</div>
-		<div class="column">
-			<?php
-				if(has_nav_menu('overlay_03')):
-					$menuName = get_term(get_nav_menu_locations()['overlay_03'], 'nav_menu')->name;
-					?>
-					<span class="menu-title"><?php echo $menuName; ?></span>
-					<?php
-					wp_nav_menu( array(
-					  'theme_location' => 'overlay_03',
-					  'menu_class' => 'list-menu-overlay'
-					));
-		        endif;
-        	?>
-		</div>
-		<div class="column">
-			<?php
-				if(has_nav_menu('overlay_04')):
-					$menuName = get_term(get_nav_menu_locations()['overlay_04'], 'nav_menu')->name;
-					?>
-					<span class="menu-title"><?php echo $menuName; ?></span>
-					<?php
-					wp_nav_menu( array(
-					  'theme_location' => 'overlay_04',
-					  'menu_class' => 'list-menu-overlay'
-					));
-		        endif;
-        	?>
-		</div>
-	</div>
+  </div>
+  <div class="menu-overlay">
+    <div class="column">
+      <?php
+      if (has_nav_menu('overlay_01')) :
+        $menuName = get_term(get_nav_menu_locations()['overlay_01'], 'nav_menu')->name;
+      ?>
+        <span class="menu-title"><?php echo $menuName; ?></span>
+      <?php
+        wp_nav_menu(array(
+          'theme_location' => 'overlay_01',
+          'menu_class' => 'list-menu-overlay'
+        ));
+      endif;
+      ?>
+    </div>
+    <div class="column">
+      <?php
+      if (has_nav_menu('overlay_02')) :
+        $menuName = get_term(get_nav_menu_locations()['overlay_02'], 'nav_menu')->name;
+      ?>
+        <span class="menu-title"><?php echo $menuName; ?></span>
+      <?php
+        wp_nav_menu(array(
+          'theme_location' => 'overlay_02',
+          'menu_class' => 'list-menu-overlay'
+        ));
+      endif;
+      ?>
+    </div>
+    <div class="column">
+      <?php
+      if (has_nav_menu('overlay_03')) :
+        $menuName = get_term(get_nav_menu_locations()['overlay_03'], 'nav_menu')->name;
+      ?>
+        <span class="menu-title"><?php echo $menuName; ?></span>
+      <?php
+        wp_nav_menu(array(
+          'theme_location' => 'overlay_03',
+          'menu_class' => 'list-menu-overlay'
+        ));
+      endif;
+      ?>
+    </div>
+    <div class="column">
+      <?php
+      if (has_nav_menu('overlay_04')) :
+        $menuName = get_term(get_nav_menu_locations()['overlay_04'], 'nav_menu')->name;
+      ?>
+        <span class="menu-title"><?php echo $menuName; ?></span>
+      <?php
+        wp_nav_menu(array(
+          'theme_location' => 'overlay_04',
+          'menu_class' => 'list-menu-overlay'
+        ));
+      endif;
+      ?>
+    </div>
+  </div>
 </nav>
