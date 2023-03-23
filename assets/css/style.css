@@ -71,7 +71,7 @@ img {
 
 p, li, a {
   color: #2b2b29;
-  font-family: tgn-soft-round, sans-serif;
+  font-family: Ryker Light, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.5px;
   line-height: 1.6;
@@ -268,7 +268,7 @@ h3 {
 }
 
 h4 {
-  font-family: tgn-soft-round-comp, sans-serif;
+  font-family: Ryker Bold, sans-serif;
   font-weight: 800;
   font-style: normal;
   line-height: 1;
@@ -900,6 +900,7 @@ form p {
   color: #2b2b29;
   display: block;
   margin: 0 0 1rem 0;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) {
   .menu-title {
@@ -1268,16 +1269,18 @@ form p {
   }
 }
 
+.news-subtitle {
+  margin-left: 3rem;
+  padding-top: 1rem;
+  font-family: Ryker Bold, sans-serif;
+}
+
 .grid-title {
   text-align: left;
   padding-left: 3rem;
 }
-.grid-title h3 {
-  text-transform: uppercase;
-}
 
 .grid .item {
-  text-align: center;
   text-decoration: none;
   border: 0;
 }
@@ -1312,7 +1315,6 @@ form p {
     flex-direction: column;
     border: 1px solid rgba(69, 67, 63, 0.1019607843);
     box-sizing: border-box;
-    border: 0.8rem solid #EEEEEE;
   }
   .grid .item .item-intro {
     flex-grow: 1;
@@ -1330,6 +1332,8 @@ form p {
     padding: 0.5rem;
     position: relative;
     margin-top: -1px;
+    font-family: Ryker Bold, sans-serif;
+    border: 0.8rem solid #EEEEEE;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -1348,8 +1352,16 @@ form p {
   }
 }
 
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 3rem 3rem 0;
+  align-items: end;
+}
+
 .item-image {
-  height: 0;
+  height: 200px;
   padding-bottom: 57.6923076923%;
   margin-bottom: 1.5rem;
   position: relative;
@@ -1371,10 +1383,10 @@ form p {
   font-family: tgn-soft-round, sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-transform: uppercase;
   display: block;
   color: #aea288;
   transition: 0.24s ease-out color;
+  padding-left: 1rem;
 }
 @media only screen and (max-width: 767px) {
   .item-subtitle {
@@ -1392,8 +1404,9 @@ form p {
 }
 
 .item-title {
-  font-size: 2rem;
+  font-size: 1.3rem;
   transition: 0.24s ease-out color;
+  padding-left: 1rem;
 }
 
 .item-intro {
@@ -1679,16 +1692,11 @@ form p {
 }
 
 .cta-bar {
-  text-align: left !important;
-}
-@media only screen and (max-width: 767px) {
-  .cta-bar {
-    padding: 3rem 0;
-  }
+  background-color: #F8F8F8;
 }
 @media only screen and (min-width: 768px) {
   .cta-bar {
-    padding: 5rem 0;
+    padding: 1rem 0 3rem 0;
   }
 }
 
@@ -1700,7 +1708,6 @@ footer .footer-top .container {
 }
 footer .footer-top .column p {
   color: #fff;
-  font-family: Ryker Light, sans-serif;
 }
 footer .footer-bottom {
   background-color: #f597a8;
@@ -1712,7 +1719,6 @@ footer .footer-bottom {
 }
 footer .menu-title {
   color: #fff;
-  font-family: Ryker Bold, sans-serif;
 }
 footer .copy {
   color: #fff;
@@ -1749,7 +1755,6 @@ footer .copy {
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 25%;
   }
   footer .footer-top .column p {
     font-size: 1rem;
@@ -1771,7 +1776,6 @@ footer .copy {
 }
 .list-footer a {
   color: #fff;
-  font-family: Ryker Light, sans-serif;
 }
 @media only screen and (max-width: 767px) {
   .list-footer a {

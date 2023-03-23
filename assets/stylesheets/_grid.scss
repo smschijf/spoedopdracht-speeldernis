@@ -14,19 +14,20 @@
 	}
 }
 
+.news-subtitle {
+  margin-left: 3rem;
+  padding-top: 1rem;
+  font-family: Ryker Bold, sans-serif;
+}
+
 .grid-title {
 	text-align: left;
   padding-left: 3rem;
-
-	h3 {
-		text-transform: uppercase;
-	}
 }
 
 .grid {
 	
 	.item {
-		text-align: center;
 		text-decoration: none;
 		border:0;
 	}
@@ -62,7 +63,7 @@
 			flex-direction:column;
 			border: 1px solid $color-11;
       box-sizing: border-box;
-      border: 0.8rem solid #EEEEEE;
+      // border: 0.8rem solid #EEEEEE;
 
 			.item-intro {
 				flex-grow:1;
@@ -87,6 +88,8 @@
 			padding:0.5rem;
 			position: relative;
 			margin-top: -1px;
+      font-family: Ryker Bold, sans-serif;
+      border: 0.8rem solid #EEEEEE;
 		}
 	}
 
@@ -102,8 +105,16 @@
 	}
 }
 
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 3rem 3rem 0;
+  align-items: end;
+}
+
 .item-image {
-	height: 0;
+	height: 200px;
 	padding-bottom: percentage(240/416);
 	margin-bottom: 1.5rem;
 	position: relative;
@@ -127,10 +138,10 @@
 	font-family: tgn-soft-round, sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	text-transform: uppercase;
 	display: block;
 	color: $color-10;
 	transition:0.24s ease-out color;
+  padding-left: 1rem;
 
 	@media only screen and (max-width: $xs-max) {
 		font-size: 10px;
@@ -145,8 +156,9 @@
 }
 
 .item-title {
-	font-size: 2rem;
+	font-size: 1.3rem;
 	transition:0.24s ease-out color;
+  padding-left: 1rem;
 }
 
 .item-intro {
