@@ -14,7 +14,6 @@
 	  	</figure>
 	  <span class="item-subtitle"><?php echo $cardSubtitle; ?></span>
 	  <h3 class="item-title"><?php echo $cardTitle; ?></h3>
-	  <p class="item-intro"><?php echo $cardIntro; ?></p>
 	  <?php /*<span class="item-date"><?php echo $cardDate; ?></span>*/ ?>
 	</a>
 </div>
