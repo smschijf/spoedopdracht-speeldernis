@@ -386,7 +386,7 @@ h6 {
 }
 
 .btn, .content-inner input[type=submit] {
-  background-color: #00b8ad;
+  background-color: #f597a8;
   border: 0;
   text-transform: uppercase;
   font-family: trade-gothic-next, sans-serif;
@@ -396,7 +396,9 @@ h6 {
   letter-spacing: 0.72px;
   text-decoration: none;
   line-height: 1.15;
-  display: inline-block;
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   padding: 1rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -1104,7 +1106,7 @@ form p {
 @media only screen and (min-width: 992px) {
   .home header {
     flex-direction: row;
-    height: 600px;
+    height: 800px;
   }
 }
 .home .header-image {
@@ -1135,7 +1137,7 @@ form p {
 }
 @media only screen and (min-width: 768px) {
   .home .header-image {
-    padding: 6rem;
+    padding: 0rem;
     justify-content: center;
   }
 }
@@ -1152,7 +1154,7 @@ form p {
 }
 .home .header-content > * {
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 .home .header-vriendenvan {
   height: 100%;
@@ -1194,7 +1196,7 @@ form p {
 }
 @media only screen and (min-width: 768px) {
   .home header .header-vriendenvan-title, .home header .header-title, .header-vriendenvan .header-vriendenvan-title, .header-vriendenvan .header-title {
-    font-size: 40px;
+    font-size: 35px !important;
     margin-bottom: 2.5rem;
   }
 }
@@ -1267,7 +1269,8 @@ form p {
 }
 
 .grid-title {
-  text-align: center;
+  text-align: left;
+  padding-left: 3rem;
 }
 .grid-title h3 {
   text-transform: uppercase;
@@ -1296,18 +1299,20 @@ form p {
 @media only screen and (min-width: 768px) {
   .grid {
     margin-top: 3rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    flex-wrap: wrap;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    padding: 0 3rem;
   }
   .grid .item {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 3rem;
     border: 1px solid rgba(69, 67, 63, 0.1019607843);
+    box-sizing: border-box;
+    border: 0.8rem solid #EEEEEE;
   }
   .grid .item .item-intro {
     flex-grow: 1;
@@ -1325,9 +1330,6 @@ form p {
     padding: 0.5rem;
     position: relative;
     margin-top: -1px;
-    flex-basis: 50%;
-    min-width: 50%;
-    max-width: 50%;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -1337,9 +1339,6 @@ form p {
   }
   .grid .column {
     padding: 0;
-    flex-basis: 33.3333333333%;
-    min-width: 33.3333333333%;
-    max-width: 33.3333333333%;
   }
   .grid .column:nth-child(1) .item {
     border-right: 0;
@@ -1438,8 +1437,23 @@ form p {
 }
 @media only screen and (min-width: 992px) {
   .page .header-content {
-    padding-left: 300px;
-    box-sizing: content-box;
+    padding: 60px 100px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 32rem;
+    min-width: 55.5rem;
+  }
+  .header-content .header-button {
+    background-color: #f597a8;
+    padding: 12px 25px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    bottom: 60px;
+    left: 100px;
   }
 }
 
@@ -1515,9 +1529,8 @@ form p {
 }
 
 .header-vriendenvan {
-  text-align: center;
+  text-align: left;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: #00b8ad;
   position: relative;
@@ -1539,13 +1552,12 @@ form p {
   text-align: center;
 }
 .header-vriendenvan .btn, .header-vriendenvan .content-inner input[type=submit], .content-inner .header-vriendenvan input[type=submit] {
-  background-color: #fff;
-  color: #00b8ad;
+  background-color: #f597a8;
+  color: #fff;
   text-transform: none;
   font-family: trade-gothic-next, sans-serif;
   margin: 0.5rem;
-  border-color: #fff;
-  border: 0;
+  border: none;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0);
   transition: 0.24s ease-out color, 0.24s ease-out box-shadow;
 }
@@ -1559,7 +1571,7 @@ form p {
 }
 @media only screen and (min-width: 768px) {
   .header-vriendenvan {
-    padding: 3.75rem;
+    padding: 2.5rem;
   }
   .header-vriendenvan .btn-holder {
     margin-top: 2rem;
@@ -1801,12 +1813,10 @@ footer .footer-top .mc4wp-form input[type=email] {
   line-height: 1;
   color: #2b2b29;
   background-color: #fff;
-  border-radius: 10px;
-  padding-right: 120px;
 }
 footer .footer-top .mc4wp-form input[type=submit] {
   font-size: 1rem;
-  height: 30px;
+  height: 3rem;
   flex-grow: 0;
   font-family: Ryker Bold, sans-serif;
   outline: none;

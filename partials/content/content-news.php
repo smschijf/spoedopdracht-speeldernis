@@ -7,7 +7,7 @@
     $newsCat = $categories[0]->term_id;
 
     $args = array(
-      'posts_per_page'  => 3,
+      'posts_per_page'  => 4,
       'post_type'   => 'post',
       'post__not_in' => array($id),
       'cat' => $newsCat,
@@ -23,7 +23,7 @@
 
     if($newsCat != ''):
       $args = array(
-        'posts_per_page'  => 3,
+        'posts_per_page'  => 4,
         'post_type'   => 'post',
         'cat' => $newsCat,
         'post_status' => 'publish',
