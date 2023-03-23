@@ -1793,7 +1793,7 @@ footer .footer-top .mc4wp-form input[type=email] {
   flex-grow: 1;
   border: 0;
   width: 290px;
-  font-family: schoolbook, serif;
+  font-family: Ryker Bold, sans-serif;
   font-weight: 400;
   outline: none;
   padding: 0 1rem;
@@ -1808,7 +1808,7 @@ footer .footer-top .mc4wp-form input[type=submit] {
   font-size: 1rem;
   height: 30px;
   flex-grow: 0;
-  font-family: schoolbook, serif;
+  font-family: Ryker Bold, sans-serif;
   outline: none;
   border: 0;
   font-weight: 700;
@@ -1818,9 +1818,9 @@ footer .footer-top .mc4wp-form input[type=submit] {
   line-height: 1;
   -webkit-appearance: none;
   background-color: #f597a8;
-  border-radius: 10px;
   color: #fff;
   transition: 0.24s ease-out;
+  border-radius: 10px;
   margin-left: -120px;
   margin-top: 9px;
 }
